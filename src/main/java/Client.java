@@ -7,5 +7,9 @@ public class Client {
         // 动态选择数据库日志
         factory = new DatabaseLoggerFactory();
         factory.writeLog("订单已创建");
+
+        // 使用控制台日志
+        factory = new ConsoleLoggerFactory();
+        factory.writeLog("系统启动完成");
     }
 }
